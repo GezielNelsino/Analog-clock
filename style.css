@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #2222ff, #121355);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.base {
+    height: 25vw;
+    width: 25vw;
+    background-color: aliceblue;
+    border-radius: 100%;
+    border: 1vw solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.numbers {
+    position: absolute;
+    font-size: 3vw;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    transform: rotate(var(--rotation));
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    position: absolute;
+    transform: rotate(var(--rotation));
+}
+
+.hand {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transform-origin: bottom;
+}
+
+.hand div {
+    border-top-right-radius: 70%;
+    border-top-left-radius: 70%;
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#hours div {
+    height: 7vw;
+    width: 5%;
+}
+
+#minutes div {
+    height: 8vw;
+    width: 4%;
+}
+
+#seconds div {
+    height: 8vw;
+    width: 3%;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgba(167, 1, 1, 0.261);
+}
+
+#center {
+    height: 2vw;
+    width: 2vw;
+    margin-top: 50%;
+    transform: translatey(-50%);
+    border-radius: 100%;
+    background-color: rgb(255, 0, 0);
+    z-index: 1;
+}
